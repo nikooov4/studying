@@ -1,0 +1,20 @@
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+.codex/
+.idea/
+.vscode/
+
+# Build output and temporary files
+*.exe
+*.test
+*.out
+*.prof
+coverage/
+bin/
+tmp/
+*.log
+.DS_Store
+Thumbs.db
