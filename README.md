@@ -1,5 +1,7 @@
 # Подготовка к Avito Backend Go
 
+Экономный режим: основная модель **Terra Medium**, для сложных проверок и mock — **Sol Medium**. Распределение по дням и этапам: [MODEL_GUIDE.md](MODEL_GUIDE.md). Модель выбирается в интерфейсе; наставник сообщает, когда стоит её сменить.
+
 ## Синхронизация через GitHub
 
 Репозиторий: https://github.com/nikooov4/studying.git
