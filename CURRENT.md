@@ -1,13 +1,13 @@
 # Текущее состояние обучения
 
-## Актуальная точка — день 8 завершён, 14.09.2026
+## Актуальная точка — день 9 завершён, 16.09.2026
 
-- Статус: завершён. Отчёт: `sessions/day-08-2026-09-14.md`.
-- Формат по плану: goroutine, concurrency vs parallelism, scheduler basics, GOMAXPROCS; затем последовательная и concurrent-версия одной задачи с замером времени.
-- Предыдущий день: контроль Go Core завершён; алгоритмы дня 7 (№31–33 и повторы) не выполнены и по указанию ученика отложены. Алгоритмы пока не включать.
-- Текущий этап: итог сохранён; ожидание начала дня 9.
+- Статус: завершён. Отчёты: `sessions/day-09-2026-09-15.md`, `sessions/day-09-2026-09-16.md`.
+- Тема по плану выполнена: unbuffered/buffered channels, blocking semantics; producer → consumer; эксперимент с размером буфера 0/1/10.
+- Алгоритмы: временно не включать по указанию ученика.
+- Текущий этап: итог сохранён.
 - Текущее задание: нет.
-- Последний отчёт: `sessions/day-07-2026-09-14.md`.
-- Повторы: typed nil; `errors.Is` vs `errors.As`; panic/recover; рост `cap` после `append` (не полагаться на точную формулу); method set value vs pointer receiver.
-- Итог дня 8: concurrency vs parallelism, goroutine, G/P/M, `GOMAXPROCS`, `WaitGroup`, race reasoning и замеры; оценки Concurrency/Practice/Race/Measurements — 3/5. Алгоритмы не выполнялись и не засчитаны.
-- Следующий шаг: начать день 9 с recall G/P/M и отличия ожидания от mutual exclusion, затем buffered/unbuffered channels. Алгоритмы пока не включать.
+- Последний отчёт: `sessions/day-09-2026-09-16.md`.
+- Итог дня 9: unbuffered/buffered channels и blocking semantics; корректный producer → consumer с known-count protocol; проверки buffer 0/1/10. Оценка Channels — 3/5. Алгоритмы не выполнялись и не засчитывались.
+- Актуальные повторы: на день 10 — rendezvous и full/empty buffer; на день 11 — deadlock/ранний `Done`; на день 15 — повторный CPU-bound эксперимент.
+- Следующий шаг: начать день 10 с recall channels, затем `close(channel)` и `range over channel`. Алгоритмы пока не включать.
