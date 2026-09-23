@@ -1,13 +1,13 @@
 # Текущее состояние обучения
 
-## Актуальная точка — день 9 завершён, 16.09.2026
+## Актуальная точка — день 10 завершён, 22.09.2026
 
-- Статус: завершён. Отчёты: `sessions/day-09-2026-09-15.md`, `sessions/day-09-2026-09-16.md`.
-- Тема по плану выполнена: unbuffered/buffered channels, blocking semantics; producer → consumer; эксперимент с размером буфера 0/1/10.
+- Статус: завершён. Отчёт: `sessions/day-10-2026-09-22.md`.
+- Тема по плану: `close(channel)`, `range over channel`, владелец закрытия канала, receive из закрытого канала; практика — pipeline из 2–3 stages.
 - Алгоритмы: временно не включать по указанию ученика.
 - Текущий этап: итог сохранён.
 - Текущее задание: нет.
-- Последний отчёт: `sessions/day-09-2026-09-16.md`.
-- Итог дня 9: unbuffered/buffered channels и blocking semantics; корректный producer → consumer с known-count protocol; проверки buffer 0/1/10. Оценка Channels — 3/5. Алгоритмы не выполнялись и не засчитывались.
-- Актуальные повторы: на день 10 — rendezvous и full/empty buffer; на день 11 — deadlock/ранний `Done`; на день 15 — повторный CPU-bound эксперимент.
-- Следующий шаг: начать день 10 с recall channels, затем `close(channel)` и `range over channel`. Алгоритмы пока не включать.
+- Последний отчёт: `sessions/day-10-2026-09-22.md`; день 10 завершён.
+- Итог дня 10: `close`, `range`, ownership закрытия, pipeline generator → square → consumer, `WaitGroup`. Практика зачтена: output 1,4,9,16,25 и сумма 55; `go vet` чист. Оценки Channels и WaitGroup/pipeline synchronization — 3/5.
+- Актуальные повторы: день 11 — deadlock/ранний `Done`, `WaitGroup` и ownership `close`; день 13 — receive vs send после `close`, `range` pipeline; день 15 — CPU-bound эксперимент; день 17 — cancellation текущего pipeline через context.
+- Следующий шаг: начать день 11 с recall `close`/`range` и ownership; затем `select`, timeout, nil channel и multiple ready cases. Алгоритмы пока не включать.
