@@ -1,13 +1,14 @@
 # Текущее состояние обучения
 
-## Актуальная точка — день 10 завершён, 22.09.2026
+## Актуальная точка — день 12 завершён, 26.09.2026
 
-- Статус: завершён. Отчёт: `sessions/day-10-2026-09-22.md`.
-- Тема по плану: `close(channel)`, `range over channel`, владелец закрытия канала, receive из закрытого канала; практика — pipeline из 2–3 stages.
-- Алгоритмы: временно не включать по указанию ученика.
+- Статус: завершён. Отчёт: `sessions/day-12-2026-09-26.md`.
+- Тема по плану: `WaitGroup`, `Mutex`, `RWMutex`, основы `atomic`; concurrent counter с Mutex и atomic.
+- День 11: начат, но незавершён; продолжить отдельно. День 12 был открыт параллельно по подтверждению ученика.
+- Алгоритмы: остаются в долге; новых задач в день 12 не выполнялось по договорённости. Не считать долг выполненным.
 - Текущий этап: итог сохранён.
 - Текущее задание: нет.
-- Последний отчёт: `sessions/day-10-2026-09-22.md`; день 10 завершён.
-- Итог дня 10: `close`, `range`, ownership закрытия, pipeline generator → square → consumer, `WaitGroup`. Практика зачтена: output 1,4,9,16,25 и сумма 55; `go vet` чист. Оценки Channels и WaitGroup/pipeline synchronization — 3/5.
-- Актуальные повторы: день 11 — deadlock/ранний `Done`, `WaitGroup` и ownership `close`; день 13 — receive vs send после `close`, `range` pipeline; день 15 — CPU-bound эксперимент; день 17 — cancellation текущего pipeline через context.
-- Следующий шаг: начать день 11 с recall `close`/`range` и ownership; затем `select`, timeout, nil channel и multiple ready cases. Алгоритмы пока не включать.
+- Последний отчёт: `sessions/day-12-2026-09-26.md`; день 12 завершён.
+- Итог дня 12: разобраны `WaitGroup`, `Mutex`, `RWMutex` и `atomic.Int64`; выполнены два варианта concurrent counter. Оба дали 10000; `go vet` и race detector без диагностик. Оценка синхронизации — 3/5.
+- Актуальные повторы: день 13 — receive vs send после `close`, `range` pipeline; также повторить `WaitGroup.Add` до запуска goroutine, ровно один `Done`, невозможность upgrade `RLock` → `Lock`; день 15 — CPU-bound эксперимент; день 17 — cancellation pipeline через context.
+- Следующий шаг: продолжить незавершённый день 11 вечером либо открыть следующий день по явному указанию; алгоритмический долг вести отдельно.
